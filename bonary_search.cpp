@@ -1,4 +1,4 @@
-//Binary search
+//Binary search in c language
 #include <stdio.h>
 
 int bSearch(int n,int *arr, int target)
