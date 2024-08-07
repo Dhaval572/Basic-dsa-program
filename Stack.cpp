@@ -1,3 +1,4 @@
+//push and pop operation in stack
 #include <iostream>
 using namespace std;
 
