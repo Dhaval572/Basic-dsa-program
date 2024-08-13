@@ -9,11 +9,11 @@ int main()
 	a[1] = 68;
 	a[2] = 89;
 	int *ptr = &*a;
-	// cout << *ptr << " ";
+	// cout << *ptr << " "; (*a + 0)
 	// *ptr++;
-	// cout << *ptr << " ";
+	// cout << *ptr << " "; (*a + 1)
 	// *ptr ++;
-	// cout << *ptr << " ";
+	// cout << *ptr << " "; (*a + 2)
 	cout << "Element of an array is: ";
 	for(int i = 0; i < 3; i++)
 	{
@@ -33,7 +33,7 @@ Note:
 
 	so, i made *ptr pointer which stores address of *a (line no. 10)
 	
-	a[1] = (*a + 1) means *ptr++
+	a[1] = (*a + 1) means *ptr++ 
 	After *ptr++ *ptr becomes (*a + 1)
 	Again increement *ptr++ then *ptr == (*a + 2)
 
