@@ -1,20 +1,20 @@
-//Binary search in c language
+// Binary search in c language
 #include <stdio.h>
 
-int bSearch(int n,int *arr, int target)
+int bSearch(int size, int *arr, int target)
 {
-	int low = 0,high = n-1,mid;
+	int low = 0, high = size - 1, mid;
 	while (low <= high)
 	{
-		mid = ((low + high)/2);
-		if(arr[mid] == target)
+		mid = ((low + high) / 2);
+		if (arr[mid] == target)
 		{
 			printf("Target found successfully!\n");
-			printf("%d is at index no. %d",target,mid);
+			printf("%d is at index no. %d", target, mid);
 			return 1;
 		}
 
-		if(arr[mid] < target)
+		if (arr[mid] < target)
 		{
 			low = mid + 1;
 		}
@@ -29,19 +29,19 @@ int bSearch(int n,int *arr, int target)
 
 void main()
 {
-	int n;
+	int size;
 	printf("Enter the size of array: ");
-	scanf("%d",&n);
+	scanf("%d", &size);
 
-	int arr[n];
-	for(int i = 0;i < n;i++)
+	int arr[size];
+	for (int i = 0; i < size; i++)
 	{
-		printf("Enter (%d) element: ",i + 1);
-		scanf("%d",&arr[i]);
+		printf("Enter (%d) element: ", i + 1);
+		scanf("%d", &arr[i]);
 	}
 
 	int target;
 	printf("Enter the target which you want to search: ");
-	scanf("%d",&target);
-	bSearch(n,arr,target);
+	scanf("%d", &target);
+	bSearch(size, arr, target);
 }
