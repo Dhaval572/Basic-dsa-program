@@ -1,5 +1,6 @@
 // Binary search in c language
 #include <stdio.h>
+#include <stdlib.h>
 
 int bSearch(int size, int *arr, int target)
 {
@@ -33,7 +34,9 @@ void main()
 	printf("Enter the size of array: ");
 	scanf("%d", &size);
 
-	int arr[size];
+	// int arr[size];// Not recommanded (Many time throws error)
+	int *arr = (int*) malloc(size * sizeof(int));
+
 	for (int i = 0; i < size; i++)
 	{
 		printf("Enter (%d) element: ", i + 1);
