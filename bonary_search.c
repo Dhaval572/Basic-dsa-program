@@ -37,6 +37,7 @@ void main()
 	// int arr[size];// Not recommanded (Many time throws error)
 	int *arr = (int*) malloc(size * sizeof(int));
 
+	printf("Note : Enter elements in accending order \n");
 	for (int i = 0; i < size; i++)
 	{
 		printf("Enter (%d) element: ", i + 1);
@@ -48,3 +49,11 @@ void main()
 	scanf("%d", &target);
 	bSearch(size, arr, target);
 }
+/*
+Note: 
+
+    ->	In binary search, element must be sorted in accending or deccending order.
+
+	->	time complexity of binary search is (log n).
+
+*/
