@@ -24,6 +24,7 @@ public:
 		if (rear == -1 && front == -1)
 		{
 			cout << "Queue is empty!";
+			return;
 		}
 
 		for (int i = front; i < rear + 1; i++)
@@ -33,7 +34,7 @@ public:
 
 	}
 
-	void enqueue(int value)
+	void enQueue(int value)
 	{
 		if (rear == (size - 1))
 		{
@@ -57,6 +58,7 @@ public:
 		if (rear == -1 && front == -1)
 		{
 			cout << "Queue is empty!";
+			return;
 		}
 		else if (front == rear)
 		{
@@ -73,8 +75,20 @@ public:
 int main()
 {
 	int size;
-	cout << "Enter the size of Queue: ";
+	cout << "Enter the size of Queue(Must be non-nagative): ";
 	cin >> size;
+
+	if(size < 0)
+	{
+		cout << "Invalid size. Enter a non-nagative value.";
+		return -1;
+	}
+
+	if(size == 0)
+	{
+		cout << "Size of Queue is: 0 So the Queue will be empty";
+		return -1;
+	}
 	Queue s(size);
 	cout << "Enter number of elements to enqueue: ";
 	int element;
@@ -92,7 +106,7 @@ int main()
 		int value;
 		cout << "Enter (" << i + 1 << ") element: ";
 		cin >> value;
-		s.enqueue(value);
+		s.enQueue(value);
 	}
 
 	cout << "Before dequeue element of Queue is: ";
