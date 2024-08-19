@@ -67,17 +67,17 @@ int main()
 	cin >> size;
 	Stack s(size);
 	cout << "Enter number of elements to push: ";
-	int element;
-	cin >> element;
+	int n;
+	cin >> n;
 
 	// Check if number of elements to push is within the stack size
-	if (element > size)
+	if (n > size)
 	{
 		cout << "Stack is greter than size of array.\n";
 		return -1;
 	}
 
-	for (int i = 0; i < element; i++)
+	for (int i = 0; i < n; i++)
 	{
 		int value;
 		cout << "Enter (" << i + 1 << ") element: ";
