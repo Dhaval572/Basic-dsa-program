@@ -80,7 +80,7 @@ int main()
 
 	if(size < 0)
 	{
-		cout << "Invalid size. Enter a non-nagative size of Queue.";
+		cout << "Invalid size. \nSize cannot be nagative";
 		return -1;
 	}
 
