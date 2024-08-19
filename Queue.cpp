@@ -86,7 +86,7 @@ int main()
 
 	if(size == 0)
 	{
-		cout << "Size of Queue is: 0 So the Queue will be empty";
+		cout << "Size of Queue is 0, So the Queue will be empty";
 		return -1;
 	}
 	Queue s(size);
