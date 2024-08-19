@@ -1,4 +1,3 @@
-//enqueue and dequeue operation in c++
 #include <iostream>
 using namespace std;
 
@@ -28,7 +27,7 @@ public:
 
 		for (int i = front; i < rear + 1; i++)
 		{
-			printf("%d ", arr[i]);
+			cout << arr[i] << ' ';
 		}
 
 	}
@@ -101,5 +100,6 @@ int main()
 	s.dequeue();
 	cout << "After dequeue element of Queue is: ";
 	s.printQue();
+	
 	return 0;
 }
