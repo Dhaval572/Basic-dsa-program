@@ -90,7 +90,7 @@ int main()
 		return -1;
 	}
 	Queue s(size);
-	cout << "Enter number of elements to enqueue: ";
+	cout << "Enter number of elements to enqueue (between 1 to "<< size << " ): ";
 	int n;
 	cin >> n;
 
@@ -98,6 +98,18 @@ int main()
 	if (n > size)
 	{
 		cout << "Queue is greter than size of array.\n";
+		return -1;
+	}
+	
+	if(n < 0)
+	{
+		cout << "You can't enter " << n << " elements in Queue. Because it is nagative value";
+		return -1;
+	}
+
+	if(n == 0)
+	{
+		cout << "The queue will be empty!";
 		return -1;
 	}
 
