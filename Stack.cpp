@@ -45,7 +45,7 @@ public:
 			cout << "Stack is Full" << endl;
 			return;
 		}
-		arr[++top] = value;//arr[++top] because top is initialized by -1 in line 15
+		arr[++top] = value;//arr[++top] because top is initialized by -1 in line 16
 	}
 
 	void pop()
