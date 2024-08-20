@@ -46,7 +46,7 @@ void main()
 		return;// To throw error
 	}
 	// int arr[size];// Not recommanded (Many time throws error)
-	int *arr = (int*) malloc(size * sizeof(int));
+	int *arr = (int*) malloc(size * sizeof(int)); // Allocates memory 
 
 	printf("Note : Enter elements in accending order \n");
 	for (int i = 0; i < size; i++)
