@@ -14,7 +14,7 @@ int main()
 	// cout << *ptr << " "; (*a + 1)
 	// *ptr ++;
 	// cout << *ptr << " "; (*a + 2)
-	cout << "Element of an array is: ";
+	cout << "Elements of an array is: ";
 	for(int i = 0; i < 3; i++)
 	{
 		cout << *ptr << " ";
