@@ -25,7 +25,7 @@ int bSearch(int size, int *arr, int target)
 		}
 	}
 	printf("Target does not found!");
-	return -1;
+	return -1;// To throw error
 }
 
 void main()
@@ -34,6 +34,17 @@ void main()
 	printf("Enter the size of array: ");
 	scanf("%d", &size);
 
+	if(size < 0)
+	{
+		printf("Invalid size. \nSize cannot be nagative.");
+		return;// To throw error
+	}
+
+	if(size == 0)
+	{
+		printf("Size of array is 0, so the array will be empty!");
+		return;// To throw error
+	}
 	// int arr[size];// Not recommanded (Many time throws error)
 	int *arr = (int*) malloc(size * sizeof(int));
 
@@ -50,10 +61,12 @@ void main()
 	bSearch(size, arr, target);
 }
 /*
-Note: 
+Note:
+
+	->	Array starts from 0 index. 		
 
     ->	In binary search, element must be sorted in accending or deccending order.
 
-	->	time complexity of binary search is (log n).
+	->	Time complexity of binary search is (log n).
 
 */
