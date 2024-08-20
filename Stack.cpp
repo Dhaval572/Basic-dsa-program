@@ -63,13 +63,36 @@ public:
 int main()
 {
 	int size;
-	cout << "Enter the size of stack: ";
+	cout << "Enter the size of stack (Size must be non-nagative): ";
 	cin >> size;
+	
+	if(size == 0)
+	{
+		cout << "Size is 0, So the stack will be empty!";
+		return -1;
+	}
+	
+	if(size < 0)
+	{
+		cout << "Invalid size. \nSize cannot be nagative.";
+		return -1;
+	}
 	Stack s(size);
-	cout << "Enter number of elements to push: ";
+	printf("Enter number of elements to push (Between 1 to %d): ", size);
 	int n;
 	cin >> n;
 
+	if(n == 0)
+	{
+		cout << "the stack will be empty!";
+		return -1;
+	}
+
+	if(n < 0)
+	{
+		printf("you cannnot enter (%d) elements in stack. Because it is nagative value.",n);
+		return -1;
+	}
 	// Check if number of elements to push is within the stack size
 	if (n > size)
 	{
@@ -77,7 +100,7 @@ int main()
 		return -1;
 	}
 
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)// Push element
 	{
 		int value;
 		cout << "Enter (" << i + 1 << ") element: ";
