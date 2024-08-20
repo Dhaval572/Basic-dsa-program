@@ -31,11 +31,11 @@ Note:
 	so a[0] = (*a + 0)
 			= *a
 
-	so, i made *ptr pointer which stores address of *a (line no. 10)
+	so, i made *ptr pointer which stores address of *a (line no. 11)
 	
 	a[1] = (*a + 1) means *ptr++ 
 	After *ptr++ *ptr becomes (*a + 1)
 	Again increement *ptr++ then *ptr == (*a + 2)
 
-	so using for loop we can this easily (line no. 17)
+	so using for loop we can this easily (line no. 18)
 */
