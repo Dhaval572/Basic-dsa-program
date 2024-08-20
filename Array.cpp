@@ -9,11 +9,11 @@ int main()
 	a[1] = 68;
 	a[2] = 89;
 	int *ptr = &*a;
-	// cout << *ptr << " "; (*a + 0)
+	// cout << *ptr << " ";		// (*a + 0)
 	// *ptr++;
-	// cout << *ptr << " "; (*a + 1)
+	// cout << *ptr << " ";		// (*a + 1)
 	// *ptr ++;
-	// cout << *ptr << " "; (*a + 2)
+	// cout << *ptr << " ";		// (*a + 2)
 	cout << "Elements of an array is: ";
 	for(int i = 0; i < 3; i++)
 	{
