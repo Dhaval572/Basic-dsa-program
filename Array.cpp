@@ -23,7 +23,7 @@ int main()
 	return 0;
 }
 /*
-Note:
+Explaination:
 
 	a[0] = (*a + 0) => a[1] = (*a + 1) => a[2] = (*a + 2) ... a[n] = (*a + n)
 	so if you want to find a[n] then you should find (*a + n)
