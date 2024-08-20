@@ -11,9 +11,10 @@ public:
 	// Traversing of linked list
 	static void traversalList(Node *ptr)
 	{
+		cout << "Element of linked list: ";
 		while (ptr != NULL)
 		{
-			cout << "Element: " << ptr->data << endl;
+			cout << ptr->data << ' ';
 			ptr = ptr->next;
 		}
 	}
