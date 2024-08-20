@@ -31,13 +31,13 @@ int main()
 	head->next = second; // head connected to second
 
 	second->data = 2;
-	second->next = third; // head connected to third
+	second->next = third; // second connected to third
 
 	third->data = 3;
-	third->next = fourth; // head connected to fourth
+	third->next = fourth; // third connected to fourth
 
 	fourth->data = 4;
-	fourth->next = NULL; // head connected to null
+	fourth->next = NULL; // fourth connected to null
 
 	Node ::traversalList(head); // Static function can call using class name
 
