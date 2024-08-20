@@ -18,6 +18,7 @@ void TOLOWER(char *str1,char *str2)
         i++;
     }
     str2[i] = '\0';
+	printf("String converted into small (lower case): ");
     puts(str2);
 }
 
