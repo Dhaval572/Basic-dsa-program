@@ -9,13 +9,13 @@ public:
 	Node *next;
 
 	// Traversing of linked list
-	static void traversalList(Node *ptr)
+	static void traversalList(Node *currentElement)
 	{
 		cout << "Element of linked list: ";
-		while (ptr != NULL)
+		while (currentElement != NULL)
 		{
-			cout << ptr->data << ' '; 			// printing elements of ptr
-			ptr = ptr->next; 					// ptr updating to print next element
+			cout << currentElement->data << ' ';   // printing elements of linked list
+			currentElement = currentElement->next; 
 		}
 	}
 };
@@ -42,5 +42,27 @@ int main()
 
 	Node ::traversalList(head); // Static function can call using class name
 
+	// Memory deallocation for make code optimized
+    delete head;
+    delete second;
+    delete third;
+    delete fourth;
+
 	return 0;
 }
+/*
+Explaination of linked list:
+
+	Linked list is a list when all elements connected with his next element.
+
+	In linked list, the last elements is connects to the null.
+
+	In a linked list, we can easily insert elements compared to an array because there is no need to move other elements in the list.
+
+Disadvantages of linked list:
+
+	Each element needs extra memory for storing a pointer.
+
+	Finding a specific element in a linked list is slower because you have to check 	   each one by one, unlike arrays where you can access any element directly.
+
+*/
