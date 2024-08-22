@@ -49,10 +49,10 @@ int main()
 	fourth->next = NULL; // fourth connected to null
 
 	cout << "Before insertion: " << endl;
-	Node::traversalList(head); // Static function can call using class name
+	Node::traversalList(head); 				// Static function can call using class name
 
 	cout << "\nAfter insertion: " << endl;
-	head = Node::insertAtFirst(head,34); // head updated
-	Node::traversalList(head); // Static function can call using class name
+	head = Node::insertAtFirst(head,34); 	// head updated
+	Node::traversalList(head); 				// Static function can call using class name
 	return 0;
 }
