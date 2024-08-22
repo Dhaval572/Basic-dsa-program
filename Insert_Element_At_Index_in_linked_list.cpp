@@ -9,37 +9,37 @@ public:
 	Node *next;
 
 	// Traversing of linked list
-	static void traversalList(Node *ptr)
+	static void traversalList(Node *list)
 	{
 		cout << "Element of linked list: ";
-		while (ptr != NULL)
+		while (list != NULL)
 		{
-			cout << ptr->data << ' '; // printing elements of ptr
-			ptr = ptr->next;		  // ptr updating to print next element
+			cout << list->data << ' '; // printing elements of list
+			list = list->next;		   // list updating to print next element
 		}
 	}
 
 	// Insertion in linked list at index
 	static Node *insertAtIndex(Node *head, int index, int data)
 	{
-		Node *newNode = new Node;
+		Node *newElement = new Node;
 		Node *current = head;				
 
 		// Special case: Inserting at index 0 (beginning of the list)
 		if (index == 0)
 		{
-			newNode->next = head; 	// newNode connected to head
-			newNode->data = data;	
-			return newNode;
+			newElement->next = head; 	// newElement connected to head
+			newElement->data = data;	
+			return newElement;
 		}
 
 		for (int i = 0; i != (index - 1); i++)   
 		{
 			current = current->next;			// current Node updates 
 		}
-		newNode->data = data;
-		newNode->next = current->next;			// newNode connected to current
-		current->next = newNode;				// current connected to newNode
+		newElement->data = data;
+		newElement->next = current->next;		// newElement connected to current
+		current->next = newElement;				// current connected to newNode
 		return head;
 	}
 };
@@ -69,6 +69,6 @@ int main()
 
 	cout << "\nAfter insertion: " << endl;
 	head = Node::insertAtIndex(head, 3, 45); // head updated
-	Node::traversalList(head);				 // Static function can call using class name
+	Node::traversalList(head);	 // Static function can call using class name
 	return 0;
 }
