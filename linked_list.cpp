@@ -14,8 +14,8 @@ public:
 		cout << "Element of linked list: ";
 		while (ptr != NULL)
 		{
-			cout << ptr->data << ' ';
-			ptr = ptr->next;
+			cout << ptr->data << ' '; 			// printing elements of ptr
+			ptr = ptr->next; 					// ptr updating to print next element
 		}
 	}
 };
