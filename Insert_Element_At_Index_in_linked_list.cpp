@@ -9,13 +9,13 @@ public:
 	Node *next;
 
 	// Traversing of linked list
-	static void traversalList(Node *currentEle)
+	static void traversalList(Node *list)
 	{
 		cout << "Element of linked list: ";
-		while (currentEle != NULL) 				// You can also use nullptr instead of NULL
+		while (list != NULL) // You can also use nullptr instead of NULL
 		{
-			cout << currentEle->data << ' '; 	// printing data of current element
-			currentEle = currentEle->next;		// currentEle updating to print next element
+			cout << list->data << ' '; // printing elements of list
+			list = list->next;		   // list updating to print next element
 		}
 	}
 
@@ -70,5 +70,12 @@ int main()
 	cout << "\nAfter insertion: " << endl;
 	head = Node::insertAtIndex(head, 3, 45); // head updated
 	Node::traversalList(head);	 // Static function can call using class name
+
+	// Memory dellocation for make code optimized
+	delete head;
+    delete second;
+    delete third;
+    delete fourth;
+
 	return 0;
 }
