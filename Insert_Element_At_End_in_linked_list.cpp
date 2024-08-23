@@ -27,7 +27,7 @@ public:
 		Node *newEle = new Node;
 		newEle->data = data;				
 
-		Node *current = head;				
+		Node *current = head;				// Set current at first element
 
 		// Moving current at last element of list
 		while (current->next != nullptr)	
