@@ -9,13 +9,13 @@ public:
 	Node *next;
 
 	// Traversing of linked list
-	static void traversalList(Node *list)
+	static void traversalList(Node *currentEle)
 	{
 		cout << "Element of linked list: ";
-		while (list != NULL)
+		while (currentEle != NULL) 				// You can also use nullptr instead of NULL
 		{
-			cout << list->data << ' '; // printing elements of list
-			list = list->next;		   // list updating to print next element
+			cout << currentEle->data << ' '; 	// printing data of current element
+			currentEle = currentEle->next;		// currentEle updating to print next element
 		}
 	}
 
