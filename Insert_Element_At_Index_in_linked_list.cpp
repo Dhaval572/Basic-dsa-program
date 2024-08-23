@@ -71,11 +71,5 @@ int main()
 	head = Node::insertAtIndex(head, 5, 45); // head updated
 	Node::traversalList(head);	 // Static function can call using class name
 
-	// Memory dellocation for make code optimized
-	delete head;
-    delete second;
-    delete third;
-    delete fourth;
-
 	return 0;
 }
