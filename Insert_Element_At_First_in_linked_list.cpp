@@ -9,13 +9,13 @@ public:
 	Node *next;
 
 	// Traversing of linked list
-	static void traversalList(Node *list)
+	static void traversalList(Node *currentElement)
 	{
 		cout << "Element of linked list: ";
-		while (list != NULL)
+		while (currentElement != NULL)
 		{
-			cout << list->data << ' '; 		// printing elements of list
-			list = list->next; 				// list updating to print next element
+			cout << currentElement->data << ' '; 	// printing data of currentElement
+			currentElement = currentElement->next; 	// currentElement updating to print next element
 		}
 	}
 
