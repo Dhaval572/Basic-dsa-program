@@ -12,7 +12,7 @@ public:
 	static void traversalList(Node *currentEle)
 	{
 		cout << "Element of linked list: ";
-		while (currentEle != NULL) // You can also use nullptr instead of NULL
+		while (currentEle != nullptr) 
 		{
 			cout << currentEle->data << ' '; // printing data of currentEle
 			currentEle = currentEle->next;   // currentEle updating to print next element
@@ -62,13 +62,13 @@ int main()
 	third->next = fourth; // third connected to fourth
 
 	fourth->data = 4;
-	fourth->next = NULL; // fourth connected to null
+	fourth->next = nullptr; // fourth connected to null
 
 	cout << "Before insertion: " << endl;
 	Node::traversalList(head); // Static function can call using class name
 
 	cout << "\nAfter insertion: " << endl;
-	head = Node::insertAtIndex(head, 3, 45); // head updated
+	head = Node::insertAtIndex(head, 5, 45); // head updated
 	Node::traversalList(head);	 // Static function can call using class name
 
 	// Memory dellocation for make code optimized
