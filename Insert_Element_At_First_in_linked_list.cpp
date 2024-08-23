@@ -23,7 +23,7 @@ public:
 	static Node *insertAtFirst(Node *head, int data)
 	{
 		Node *newElement = new Node; 
-		newElement->next = head; 			// newElement connected to head
+		newElement->next = head; 					// newElement connected to head
 		newElement->data = data; 	
 	}
 };
@@ -54,5 +54,12 @@ int main()
 	cout << "\nAfter insertion: " << endl;
 	head = Node::insertAtFirst(head,34); 	// head updated
 	Node::traversalList(head); 				// Static function can call using class name
+
+	// Memory dellocation for make code optimized
+	delete head;
+    delete second;
+    delete third;
+    delete fourth;
+
 	return 0;
 }
