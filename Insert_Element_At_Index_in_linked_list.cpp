@@ -35,11 +35,12 @@ public:
 
 		for (int i = 0; i != (index - 1); i++)   
 		{
-			current = current->next;			// current Node updates 
+			current = current->next;		// current Node updates 
 		}
+		
 		newElement->data = data;
-		newElement->next = current->next;		// newElement connected to current
-		current->next = newElement;				// current connected to newNode
+		newElement->next = current->next;	// newElement connected to current element's next element
+		current->next = newElement;			// current connected to newNode
 		return head;
 	}
 };
@@ -68,8 +69,9 @@ int main()
 	Node::traversalList(head); // Static function can call using class name
 
 	cout << "\nAfter insertion: " << endl;
-	head = Node::insertAtIndex(head, 5, 45); // head updated
+	head = Node::insertAtIndex(head, 3, 45); // head updated
 	Node::traversalList(head);	 // Static function can call using class name
 
 	return 0;
 }
+
