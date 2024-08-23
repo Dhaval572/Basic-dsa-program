@@ -12,7 +12,7 @@ public:
 	static void traversalList(Node *currentElement)
 	{
 		cout << "Element of linked list: ";
-		while (currentElement != NULL)
+		while (currentElement != nullptr)
 		{
 			cout << currentElement->data << ' ';   // printing elements of linked list
 			currentElement = currentElement->next; 
@@ -38,7 +38,7 @@ int main()
 	third->next = fourth; // third connected to fourth
 
 	fourth->data = 4;
-	fourth->next = NULL; // fourth connected to null
+	fourth->next = nullptr; // fourth connected to null
 
 	Node ::traversalList(head); // Static function can call using class name
 
