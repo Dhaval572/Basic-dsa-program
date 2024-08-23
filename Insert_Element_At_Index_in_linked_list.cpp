@@ -23,7 +23,7 @@ public:
 	static Node *insertAtIndex(Node *head, int index, int data)
 	{
 		Node *newElement = new Node;
-		Node *current = head;				
+		Node *current = head;			// set current at first element of list	
 
 		// Special case: Inserting at index 0 (beginning of the list)
 		if (index == 0)
