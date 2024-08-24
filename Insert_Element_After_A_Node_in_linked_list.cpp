@@ -62,3 +62,9 @@ int main()
 
 	return 0;
 }
+/*
+	Note : index and Node both are different
+	Index is index of Linked list. 
+	Node is element of linked list
+	And also insert after node and insert at index both are different.
+*/ 
