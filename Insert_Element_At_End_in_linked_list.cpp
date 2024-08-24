@@ -9,14 +9,14 @@ public:
 	Node *next;
 
 	// Linked list traversal
-	static void traversalList(Node *currentEle)
+	static void traversalList(Node *currentNode)
 	{
 		cout << "Elements of list: ";
 
-		while (currentEle != nullptr)
+		while (currentNode != nullptr)
 		{
-			cout << currentEle->data << " ";    // printing data of currentElement
-			currentEle = currentEle->next;	    // currentElement updating to print next element 
+			cout << currentNode->data << " "; // printing data of currentNode
+			currentNode = currentNode->next;  // currentNode updating to print next Node
 		}
 		cout << endl;
 	}
@@ -24,19 +24,19 @@ public:
 	// Insertion in linked list at end
 	static Node *insertAtEnd(Node *head, int data)
 	{
-		Node *newEle = new Node;
-		newEle->data = data;				
+		Node *newNode = new Node;
+		newNode->data = data;				
 
-		Node *current = head;				// Set current at first element
+		Node *current = head;				// Set current at first Node
 
-		// Moving current at last element of list
+		// Moving current at last Node of list
 		while (current->next != nullptr)	
 		{
 			current = current->next;		// current updating 
 		}
 
-		current->next = newEle;				// current connected to newELe
-		newEle->next = nullptr;				// newEle connected to null
+		current->next = newNode;			// current connected to newNode
+		newNode->next = nullptr;			// newNode connected to null
 		return head;
 	}
 };
