@@ -9,13 +9,13 @@ public:
 	Node *next;
 
 	// Traversing of linked list
-	static void traversalList(Node *currentElement)
+	static void traversalList(Node *currentNode)
 	{
 		cout << "Element of linked list: ";
-		while (currentElement != nullptr)
+		while (currentNode != nullptr)
 		{
-			cout << currentElement->data << ' ';   // printing elements of linked list
-			currentElement = currentElement->next; 
+			cout << currentNode->data << ' ';   // printing elements of linked list
+			currentNode = currentNode->next; 
 		}
 	}
 };
@@ -53,9 +53,19 @@ int main()
 /*
 Explaination of linked list:
 
-	Linked list is a list when all elements connected with his next element.
+	In linked list all elements known as Node.
 
-	In linked list, the last elements is connects to the null.
+	Linked list is a list when all Nodes (elements) connected with his next Node (element).
+
+	In linked list, the last Node is connects to the null.
+
+	Structure of Linked list:
+
+	[Node1] -> [Node2] -> [Node3] -> nullptr
+
+	In upperside is structure of linked list when first node connected to second and second connected to third and as well as third connected to null pointer
+
+	( Note : we should say that first Node points to second, but for beginners, i used 'connected' word for simplicity. )
 
 	In a linked list, we can easily insert elements compared to an array because there is no need to move other elements in the list.
 
