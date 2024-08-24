@@ -34,6 +34,7 @@ public:
 
 int main()
 {
+	// Memory allocation for creating linked list
 	Node *head = new Node;
 	Node *second = new Node;
 	Node *third = new Node;
