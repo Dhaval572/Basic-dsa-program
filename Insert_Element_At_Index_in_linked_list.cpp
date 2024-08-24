@@ -69,8 +69,12 @@ int main()
 	Node::traversalList(head); // Static function can call using class name
 
 	cout << "\nAfter insertion: " << endl;
-	head = Node::insertAtIndex(head, 3, 45); // head updated
+	head = Node::insertAtIndex(head, 2, 45); // head updated
 	Node::traversalList(head);	 // Static function can call using class name
 
 	return 0;
 }
+
+// Note : index and Node both are different
+// Index is index of Linked list. 
+// Node is element of linked list
