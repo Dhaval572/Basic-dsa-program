@@ -23,6 +23,7 @@ public:
 	static Node *insertAtIndex(Node *head, int index, int data)
 	{
 		Node *newNode = new Node;
+		newNode->data = data;
 		Node *current = head;			// set current at first Node of list	
 
 		// Special case: Inserting at index 0 (beginning of the list)
@@ -38,7 +39,6 @@ public:
 			current = current->next;	// current Node updates 
 		}
 		
-		newNode->data = data;
 		newNode->next = current->next;	// newNode connected to current Node's next Node 
 		current->next = newNode;		// current connected to newNode
 		return head;
