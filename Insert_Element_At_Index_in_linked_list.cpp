@@ -9,38 +9,38 @@ public:
 	Node *next;
 
 	// Traversing of linked list
-	static void traversalList(Node *currentEle)
+	static void traversalList(Node *currentNode)
 	{
 		cout << "Element of linked list: ";
-		while (currentEle != nullptr) 
+		while (currentNode != nullptr) 
 		{
-			cout << currentEle->data << ' '; // printing data of currentEle
-			currentEle = currentEle->next;   // currentEle updating to print next element
+			cout << currentNode->data << ' '; // printing data of currentNode
+			currentNode = currentNode->next;  // currentNode updating to print next Node
 		}
 	}
 
 	// Insertion in linked list at index
 	static Node *insertAtIndex(Node *head, int index, int data)
 	{
-		Node *newElement = new Node;
-		Node *current = head;			// set current at first element of list	
+		Node *newNode = new Node;
+		Node *current = head;			// set current at first Node of list	
 
 		// Special case: Inserting at index 0 (beginning of the list)
 		if (index == 0)
 		{
-			newElement->next = head; 	// newElement connected to head
-			newElement->data = data;	
-			return newElement;
+			newNode->next = head; 	// newNode connected to head
+			newNode->data = data;	
+			return newNode;
 		}
 
 		for (int i = 0; i != (index - 1); i++)   
 		{
-			current = current->next;		// current Node updates 
+			current = current->next;	// current Node updates 
 		}
 		
-		newElement->data = data;
-		newElement->next = current->next;	// newElement connected to current element's next element
-		current->next = newElement;			// current connected to newNode
+		newNode->data = data;
+		newNode->next = current->next;	// newNode connected to current Node's next Node 
+		current->next = newNode;		// current connected to newNode
 		return head;
 	}
 };
@@ -74,4 +74,3 @@ int main()
 
 	return 0;
 }
-
