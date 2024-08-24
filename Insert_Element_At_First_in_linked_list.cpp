@@ -9,22 +9,22 @@ public:
 	Node *next;
 
 	// Traversing of linked list
-	static void traversalList(Node *currentElement)
+	static void traversalList(Node *currentNode)
 	{
 		cout << "Element of linked list: ";
-		while (currentElement != nullptr)
+		while (currentNode != nullptr)
 		{
-			cout << currentElement->data << ' '; 	// printing data of currentElement
-			currentElement = currentElement->next; 	// currentElement updating to print next element
+			cout << currentNode->data << ' '; 	// printing data of currentNode
+			currentNode = currentNode->next; 	// currentNode updating to print next 
 		}
 	}
 
 	// Insertion in linked list at first
 	static Node *insertAtFirst(Node *head, int data)
 	{
-		Node *newElement = new Node; 
-		newElement->next = head; 					// newElement connected to head
-		newElement->data = data; 	
+		Node *newNode = new Node; 
+		newNode->next = head; 					// newNode connected to head
+		newNode->data = data; 	
 	}
 };
 
@@ -57,3 +57,5 @@ int main()
 
 	return 0;
 }
+
+// Note: In linked list, elements are known as Node
