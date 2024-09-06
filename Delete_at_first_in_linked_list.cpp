@@ -24,7 +24,7 @@ public:
     {
         Node *nodeTODelete = head;
         head = head->next;                          // Move the head to the next node
-        delete[] nodeTODelete;                      // clear memory of first node for reuse
+        delete nodeTODelete;                      // clear memory of first node for reuse
         return head;
     }
 };
