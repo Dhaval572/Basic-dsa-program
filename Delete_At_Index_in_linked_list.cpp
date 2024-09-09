@@ -76,3 +76,23 @@ int main()
 
 	return 0;
 }
+/*
+Explaination: 
+
+	Before insertion, linked list was looked like below:
+
+	(Note: just assume that we deleted Node at index 2)
+
+	head -> [Node 1] -> [Node 2] ->[Node 3] ->[Node 4] -> NULL
+	index =   (0)		  (1)        (2)	     (3)
+
+	Before insertion, linked list was looked like below:
+
+	head -> [Node 1] -> [Node 2] -> [Node 4] -> NULL
+	index =   (0)		  (1)         (3)
+
+	So, that was insertion at index in linked list.
+
+	I hope you understand!!
+	
+*/
