@@ -57,5 +57,23 @@ int main()
 
 	return 0;
 }
+/*
+Explaination:
 
-// Note: In linked list, elements are known as Node
+	Before insertion list was looked like below: 
+
+	head -> [ 1 | next] - [ 2 | next] - [ 3 | next] - [ 4 | next] - NULL
+
+	( Note : In this diagram [ value | pointer ]
+	it means in the first box is value or data of linked list and than second box has pointer which points next node of current node )
+
+	Before insertion list was looked like below:
+
+	head -> [ 34 | next] - [ 1 | next] - [ 2 | next] - [ 3 | next] - [ 4 | next] - NULL
+
+	So, you can see that in the list before insertion, first node had value (1) And after insertion first element was got value (34).
+
+	So, I hope you understand.
+
+( Note: In linked list, elements are known as Node )
+*/
