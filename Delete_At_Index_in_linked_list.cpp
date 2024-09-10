@@ -86,7 +86,7 @@ Explaination:
 	head -> [Node 1] -> [Node 2] ->[Node 3] ->[Node 4] -> NULL
 	index =   (0)		  (1)        (2)	     (3)
 
-	Before insertion, linked list was looked like below:
+	After insertion, linked list will look like below:
 
 	head -> [Node 1] -> [Node 2] -> [Node 4] -> NULL
 	index =   (0)		  (1)         (3)
