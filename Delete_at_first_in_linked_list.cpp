@@ -23,7 +23,7 @@ public:
     static Node *deleteFrist(Node *head)
     {
         Node *nodeTODelete = head;
-        head = head->next;                          // Move the head to the next node
+        head = head->next;                        // Move the head to the next node
         delete nodeTODelete;                      // clear memory of first node for reuse
         return head;
     }
@@ -62,10 +62,14 @@ int main()
 Explaination: 
 
     Before deletion the linked list will look like that: 
+
     head -> [Node 1] -> [Node 2] -> [Node 3] -> [Node 4]
 
-    After deleting the first node, the linked list looks like this:
+    After deleting the first node, the linked list will looks like this:
+
     head -> [Node 2] -> [Node 3] -> [Node 4]
 
     It means the first node of the linked list is deleted, and its memory is freed up.
+
+	I hope you understand!!
 */
