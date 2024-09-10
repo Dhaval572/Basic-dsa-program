@@ -63,6 +63,7 @@ int main()
 
 	cout << "\nAfter insertion: " << endl;
 	Node ::displayList(head);
+	
 	// Memory deallocation for make code optimized
 	delete head;
 	delete second;
@@ -79,12 +80,13 @@ Explaination:
 
 	[Node 1] -> [Node 2] -> [Node 3] -> [Node 4] -> NULL
 
-	Before deletion at last, List was look like below:
+	After deletion at last, List will look like below:
 
 	[Node 1] -> [Node 2] -> [Node 3] -> NULL
 
 	So, you can see that the last element deleted from linked list.
 
-
 	So, this was deletion at the end of list.
+
+	I hope you understand!!
 */
