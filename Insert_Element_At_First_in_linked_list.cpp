@@ -67,7 +67,7 @@ Explaination:
 	( Note : In this diagram [ value | pointer ]
 	it means in the first box is value or data of linked list and than second box has pointer which points next node of current node )
 
-	Before insertion list was looked like below:
+	Aefore insertion list will look like below:
 
 	head -> [ 34 | next] - [ 1 | next] - [ 2 | next] - [ 3 | next] - [ 4 | next] - NULL
 
