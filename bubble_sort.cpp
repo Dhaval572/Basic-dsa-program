@@ -56,7 +56,7 @@ Explaination:
 
 	Here are simple diagram to understand bubble sort:
 
-	Initial List:       [5, 3, 8, 4, 2]
+	Initial Array:       [5, 3, 8, 4, 2]
 
 	Pass 1:            [3, 5, 8, 4, 2]   (5 and 3 swapped)
 					   [3, 5, 8, 4, 2]
@@ -72,7 +72,7 @@ Explaination:
 
 	Pass 4:            [2, 3, 4, 5, 8]   (3 and 2 swapped)
 
-	Final Sorted List: [2, 3, 4, 5, 8]
+	Final Sorted Array: [2, 3, 4, 5, 8]
 
 	I hope you understand!!
 */
