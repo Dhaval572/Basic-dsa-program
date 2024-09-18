@@ -54,25 +54,25 @@ Explaination:
 
 	For example : 34 > 32 So, it must swap means 34 must go to last like 32, 34.
 
-	Here are simple diagram to understand bubble sort:
+	Here are simple explaination to understand bubble sort:
 
-	Initial Array:       [5, 3, 8, 4, 2]
+	Initial Array:       {5, 3, 8, 4, 2}
 
-	Pass 1:            [3, 5, 8, 4, 2]   (5 and 3 swapped)
-					   [3, 5, 8, 4, 2]
-					   [3, 5, 4, 8, 2]   (8 and 4 swapped)
-					   [3, 5, 4, 2, 8]   (8 and 2 swapped)
+	Pass 1:            {3, 5, 8, 4, 2}   (5 and 3 swapped)
+					   {3, 5, 8, 4, 2}
+					   {3, 5, 4, 8, 2}   (8 and 4 swapped)
+					   {3, 5, 4, 2, 8}   (8 and 2 swapped)
 
-	Pass 2:            [3, 5, 4, 2, 8]   (8 is in correct place)
-					   [3, 4, 5, 2, 8]   (5 and 4 swapped)
-					   [3, 4, 2, 5, 8]   (5 and 2 swapped)
+	Pass 2:            {3, 5, 4, 2, 8}   (8 is in correct place)
+					   {3, 4, 5, 2, 8}   (5 and 4 swapped)
+					   {3, 4, 2, 5, 8}   (5 and 2 swapped)
 
-	Pass 3:            [3, 4, 2, 5, 8]   (5 is in correct place)
-					   [3, 2, 4, 5, 8]   (4 and 2 swapped)
+	Pass 3:            {3, 4, 2, 5, 8}   (5 is in correct place)
+					   {3, 2, 4, 5, 8}   (4 and 2 swapped)
 
-	Pass 4:            [2, 3, 4, 5, 8]   (3 and 2 swapped)
+	Pass 4:            {2, 3, 4, 5, 8}   (3 and 2 swapped)
 
-	Final Sorted Array: [2, 3, 4, 5, 8]
+	Final Sorted Array: {2, 3, 4, 5, 8}
 
 	I hope you understand!!
 */
