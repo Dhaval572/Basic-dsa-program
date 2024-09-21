@@ -1,6 +1,8 @@
 // Components of tree data structure
 
+
 /*
+( Note: copy all the text into vs code to look perfect diagram otherwise it will become difficult to understand )
 Diagram: 
 
 	    A (Root, Depth 0)
