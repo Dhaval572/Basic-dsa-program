@@ -32,17 +32,17 @@ Diagram:
 	Example: The lines connecting A to B and C, B to D and E, C to F are edges.
 	( look at diagram to perfectly understand )
 
-4. Parent:
-
-	A parent is a node that has one or more children (child nodes).
-
-	Example: A is the parent of B and C; B is the parent of D and E; C is the parent of F; D is the parent of G.
-
-5. Child:
+4. Child:
 
 	A child is a node directly connected to another node when moving away from the root.
 
 	Example: B and C are children of A; D and E are children of B; F is a child of C.
+
+5. Parent:
+
+	A parent is a node that has one or more children (child nodes).
+
+	Example: A is the parent of B and C; B is the parent of D and E; C is the parent of F; D is the parent of G.
 
 6. Leaf:
 
