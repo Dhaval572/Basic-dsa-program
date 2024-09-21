@@ -5,13 +5,13 @@
 
 Diagram: 
 
-	    A (Root, Depth 0)
+	    A (Depth 0)
        / \
-      B   C (Parent of D, Depth 1)
+      B   C (Depth 1)
      / \   \
-    D   E   F (Leaf, Depth 2)
+    D   E   F (Depth 2)
    /
-  G (Leaf, Depth 3)
+  G 			(Depth 3)
 
 1. Node:
 
