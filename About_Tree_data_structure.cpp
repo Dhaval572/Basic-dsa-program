@@ -2,6 +2,7 @@
 
 /*
 
+( Note: copy all the text into vs code to look perfect diagram otherwise it will become difficult to understand )
 =>	A tree data structure is a way to organize data in a hierarchy, like a family tree, that makes it easy to find, add, or remove items.
 
 =>	Tree data structures are non-linear data structures.
