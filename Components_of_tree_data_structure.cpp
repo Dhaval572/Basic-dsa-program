@@ -11,7 +11,7 @@ Diagram:
      / \   \
     D   E   F (Depth 2)
    /
-  G 			(Depth 3)
+  G 	(Depth 3)
 
 1. Node:
 
@@ -29,7 +29,8 @@ Diagram:
 
 	An edge is the connection between two nodes.
 
-	Example: The lines connecting A to B and C, B to D and E, and C to F are edges.
+	Example: The lines connecting A to B and C, B to D and E, C to F are edges.
+	( look at diagram to perfectly understand )
 
 4. Child:
 
