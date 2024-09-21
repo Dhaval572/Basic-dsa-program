@@ -36,13 +36,13 @@ Diagram:
 
 	A child is a node directly connected to another node when moving away from the root.
 
-	Example: B and C are children of A; D and E are children of B and F is a child of C.
+	Example: B and C are children of A; D and E are children of B; F is a child of C.
 
 5. Parent:
 
 	A parent is a node that has one or more children (child nodes).
 
-	A is the parent of B and C; B is the parent of D and E; C is the parent of F; D is the parent of G.
+	Example: A is the parent of B and C; B is the parent of D and E; C is the parent of F; D is the parent of G.
 	
 6. Leaf:
 
