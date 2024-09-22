@@ -68,7 +68,7 @@ Explaination:
 
 	So, this is steps to traverse tree in Pre-order.
 
-	So, in this code i use recurisive function to do Pre-order traversal.
+	So, in this code i used recurisive function to do Pre-order traversal.
 
 	So, below is a logic of Pre-order traversal using recursion
 
