@@ -65,7 +65,7 @@ Explaination with diagram:
 
 	parentNode1 have one child node which is childNode1 and parentNode2 have also one child node which is childNode2
 
-	childNode1 have one child node which is leafNode1 and childNode2 have also one child node which is leafNode2\
+	childNode1 have one child node which is leafNode1 and childNode2 have also one child node which is leafNode2
 
 	So, leaf nodes are always last node of tree in any tree
 
