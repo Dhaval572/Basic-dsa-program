@@ -32,28 +32,26 @@ public:
 
 int main()
 {
-	Node *rootNode = Node::createNode(27);	  // Creating a rootNode
-	Node *parentNode1 = Node::createNode(28); // Creating a parentNode1
-	Node *parentNode2 = Node::createNode(29); // Creating a parentNode2
-	Node *childNode1 = Node::createNode(30);  // Creating a childNode1
-	Node *childNode2 = Node::createNode(31);  // Creating a childNode2
-	Node *leafNode1 = Node::createNode(32);	  // Creating a leafNode1
-	Node *leafNode2 = Node::createNode(33);	  // Creating a leafNode1
+	Node *rootNode = Node::createNode(1);	  // Creating a rootNode
+	Node *parentNode1 = Node::createNode(2); // Creating a parentNode1
+	Node *parentNode2 = Node::createNode(3); // Creating a parentNode2
+	Node *childNode1 = Node::createNode(4);  // Creating a childNode1
+	Node *childNode2 = Node::createNode(5);  // Creating a childNode2
+	Node *childNode3 = Node::createNode(6);  // Creating a childNode3
 
 	// Linking a rootNode with left and right childNodes
 	rootNode->left = parentNode1;
 	rootNode->right = parentNode2;
 
-	// Linking a parentNodes to his child nodes
+	// Linking a parentNode1 to his child node
 	parentNode1->left = childNode1;
-	parentNode2->right = childNode2;
+	parentNode1->right = childNode2;
 
-	// Linking a childNodes to leafNodes
-	childNode1->left = leafNode1;
-	childNode2->right = leafNode2;
+	// Linking a perentNode2 to his child node
+	parentNode2->left = childNode3;
 
 	// Static function can call using class name So not need to use object to call this function
-	Node::preOrderTraversal(rootNode);
+	Node::preOrderTraversal(rootNode); // It will provide: 1 2 4 5 3 6
 
 	return 0;
 }
