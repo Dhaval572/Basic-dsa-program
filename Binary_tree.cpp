@@ -47,6 +47,8 @@ int main()
 /*
 Explaination:
 
+( Note: copy all code and paste in vs code to look diagram perfectly! )
+
 	Here is diagram of tree which is created upperside in code.
 
 					rootNode(27)
