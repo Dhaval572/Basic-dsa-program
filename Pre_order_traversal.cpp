@@ -1,4 +1,4 @@
-// Creating a binary tree in c++
+// Pre-order traversal in binary tree
 #include <iostream>
 using namespace std;
 
@@ -72,7 +72,6 @@ Explaination:
 
 	So, below is a logic of Pre-order traversal using recursion
 
-	
 	void preOrderTraversal(Node *root) {
 	
 	    if (root != NULL) {
