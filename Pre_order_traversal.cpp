@@ -87,8 +87,6 @@ Explaination:
 	    }
 	}
 
-	So in this logic, we traversing a left sub-tree and right sub-tree while rootNode doesn't become null 
-
 	I have worked hard to make this clear and easy to understand.
 
 	So, i hope you understand!!
