@@ -51,7 +51,7 @@ int main()
 	parentNode2->left = childNode3;
 
 	// Static function can call using class name So not need to use object to call this function
-	Node::inOrderTraversal(rootNode); // It will provide: 4 5 2 6 3 1
+	Node::inOrderTraversal(rootNode); // It will provide: 4 2 5 1 6 3
 
 	return 0;
 }
