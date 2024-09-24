@@ -29,24 +29,45 @@ public:
 		}
 	}
 
-	static Node *search(Node *rootNode, int Target)
+	static Node *searchUsingRecurtion(Node *rootNode, int Target)
 	{
-		if (rootNode == nullptr)
+		if (rootNode == nullptr) // If Node is NULL
 		{
 			return nullptr;
 		}
-		if (Target == rootNode->data)
+		if (Target == rootNode->data) // If target found
 		{
 			return rootNode;
 		}
 		else if (Target < rootNode->data)
 		{
-			return search(rootNode->left, Target);
+			return searchUsingRecurtion(rootNode->left, Target); // Searching in left sub-tree
 		}
 		else
 		{
-			return search(rootNode->right, Target);
+			return searchUsingRecurtion(rootNode->right, Target); // Searching in right sub-tree
 		}
+	}
+
+	static Node *searchUsingLoop(Node *rootNode, int target)
+	{
+		while (rootNode != nullptr)
+		{
+			if (target == rootNode->data)
+			{
+				return rootNode;
+			}
+			else if (target < rootNode->data)
+			{
+				rootNode = rootNode->left;
+			}
+			else
+			{
+				rootNode = rootNode->right;
+			}
+		}
+
+		return nullptr;
 	}
 };
 
@@ -79,10 +100,14 @@ int main()
 	Node::inOrderTraversal(rootNode);
 	cout << endl;
 
-	Node *searchResult = Node::search(rootNode, 28);
-	if (searchResult != nullptr)
+	int target;
+	cout << "Which element you want to search? ";
+	cin >> target;
+
+	Node *result = Node::searchUsingRecurtion(rootNode, target);
+	if (result != nullptr)
 	{
-		cout << "Node found with value: " << searchResult->data << endl;
+		cout << "Node found with value: " << result->data << endl;
 	}
 	else
 	{
@@ -93,15 +118,18 @@ int main()
 }
 
 /*
-Explaination searching in BST: 
 
-	      27
-         /  \
-       25    30
-       / \     \
-     26   28   35
-               /
-             32
+( Note: you can do this in two ways using loop and using recursion But recursion is perfect way to do this )
+
+Explaination searching in BST:
+
+		  27
+		 /  \
+	   25    30
+	   / \     \
+	 26   28   35
+			   /
+			 32
 
 	Searching for 28:
 
