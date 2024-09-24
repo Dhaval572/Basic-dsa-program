@@ -1,7 +1,7 @@
 // Binary search tree 
 
 /*
-( Note: copy all text into vs code to view properly )
+( Note: copy all text and paste in vs code to view properly )
 
 A binary search tree (BST) is a type of binary tree that has the following properties:
 
