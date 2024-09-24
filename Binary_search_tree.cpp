@@ -66,6 +66,6 @@ int main()
 
 	So, you all know that in binary search tree (BST), Inorder traversal is like as an ascending sorted array.
 
-	If you don't know that what is inorder traversal, than explore my github link "https://github.com/Dhaval572/Basic-dsa-program" and find this file: 'In_order_traversal.cpp'
+	If you don't know that what is inorder traversal, than explore my github link "https://github.com/Dhaval572/Basic-dsa-program" and find this file: 'Traversal_in_binary_tree.cpp'
 
 */
