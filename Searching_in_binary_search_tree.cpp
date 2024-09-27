@@ -31,7 +31,7 @@ public:
 
 	static Node *searchUsingRecurtion(Node *rootNode, int Target)
 	{
-		if (rootNode == nullptr) // If Node is NULL
+		if (rootNode == nullptr) // If rootNode is NULL
 		{
 			return nullptr;
 		}
