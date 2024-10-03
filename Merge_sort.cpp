@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+// Displaying array
 void display(int size, int *arr)
 {
     cout << "Element of array is: ";
@@ -14,7 +15,7 @@ void display(int size, int *arr)
 
 void merge(int *currentArr, int low, int mid, int high)
 {
-    int newArr[50];
+    int newArr[50]; // Define new array to add element in it
     int i = low;
     int j = mid + 1;
     int k = low;
@@ -59,15 +60,16 @@ void merge(int *currentArr, int low, int mid, int high)
     }
 }
 
+// Doing actualy merge sort
 void mergeSort(int *arr, int low, int high)
 {
     int mid;
     if (low < high)
     {
         mid = (low + high) / 2;
-        mergeSort(arr, low, mid);
-        mergeSort(arr, mid + 1, high);
-        merge(arr, low, mid, high);
+        mergeSort(arr, low, mid);       // Sorting left array
+        mergeSort(arr, mid + 1, high);  // Sorting right array
+        merge(arr, low, mid, high);     // Merging both sorted array 
     }
 }
 
