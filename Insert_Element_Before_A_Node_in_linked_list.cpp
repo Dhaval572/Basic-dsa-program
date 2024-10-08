@@ -25,13 +25,13 @@ public:
 		Node *newNode = new Node;
 		newNode->data = data;					
 		
-		Node *ptr = head;
-		while(ptr->next != node) 
+		Node *current = head;
+		while(current->next != node) 
 		{
-			ptr = ptr->next;
+			current = current->next;
 		}
 
-		ptr->next = newNode;
+		current->next = newNode;
 		newNode->next = node;
 		return head;
 	}
