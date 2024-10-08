@@ -26,9 +26,9 @@ A binary search tree (BST) is a type of binary tree that has the following prope
      / \   / \
     3   7 12  17
 
-	So, you can check that all properties are working or not.
+	So, you can check that all binary search tree's properties are working properly.
 
-	SO, let's travers this tree in In-order.
+	So, let's travers this tree in In-order.
 
 	In-order traversal: 3, 5, 7, 10, 12, 15, 17
 
