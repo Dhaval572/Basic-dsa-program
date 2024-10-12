@@ -8,7 +8,9 @@ void selectionSort(int size, int *arr)
     for (int i = 0; i < size - 1; i++) // Number of passes
     {
         indexOfMin = i; // Assume that indexOfMin is 0
-        for (int j = i + 1; j < size; j++) // 
+		
+		// Finding minimum elements from array
+        for (int j = i + 1; j < size; j++) 
         {
             if (arr[j] < arr[indexOfMin]) 
             {
