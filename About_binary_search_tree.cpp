@@ -7,9 +7,9 @@ A binary search tree (BST) is a type of binary tree that has the following prope
 
 	Properties:
 
-		1). All nodes of left sub-tree are less than his root node.
+		1). All nodes of left sub-trees are less than his root node.
 
-		2). All nodes of right sub-tree are greter than than his root node.
+		2). All nodes of right sub-trees are greter than than his root node.
 
 		3). Left and Right sub-trees are also binary tree.
 			it means sub-trees have maximum 2 child nodes.
