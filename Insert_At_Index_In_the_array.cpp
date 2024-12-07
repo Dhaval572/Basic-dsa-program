@@ -1,46 +1,37 @@
+// Insert at index in array
 #include <iostream>
 using namespace std;
 
-// Array traversal
-void display(int size, int *arr)
+void insertAtIndex(int *arr, int &size, int index, int value)
 {
-	for (int i = 0; i < size; i++)
+	// Shift elements to the right to make space for the new value
+	for (int i = size; i > index; --i)
 	{
-		printf("a[%d] = %d \n", i, arr[i]);
+		arr[i] = arr[i - 1]; 
 	}
 
-	cout << endl;
-}
+	// Insert the new value at the specified index
+	arr[index] = value;
 
-void insertAtIndex(int size, int capacity, int *arr, int element, int index)
-{
-	if (size >= capacity)
-	{
-		cout << "Array is full, So can't any more";
-		return;
-	}
-
-	// Shift elements to the right to make space for the new element
-	for (int i = size; i > index; i--)
-	{
-		arr[i] = arr[i - 1];
-	}
-
-	arr[index] = element;
+	// Increase the size of the array
+	size++;
 }
 
 int main()
 {
-	int arr[100] = {23, 35, 67, 49};
-	int size = 4, element = 87, index = 3, capacity = 100;
+	int arr[6] = {1, 2, 3, 4, 0}; // Array with initial size 5, we are going to add 1 element
+	int size = 4;				  // Current number of elements in the array
+	int index = 2;				  // Index where we want to insert
+	int value = 99;				  // Value to insert
 
-	cout << "Before insertion: \n";
-	display(size, arr);
+	insertAtIndex(arr, size, index, value);
 
-	insertAtIndex(size, capacity, arr, element, index);
-	size++;
-	cout << "After insertion: \n";
-	display(size, arr);
+	// Print the updated array
+	for (int i = 0; i < size; ++i)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
 
 	return 0;
 }
