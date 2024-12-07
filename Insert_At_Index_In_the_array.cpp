@@ -35,3 +35,24 @@ int main()
 
 	return 0;
 }
+/* 
+Explaination: 
+
+	Dry run the code : 
+
+		Line no. 8 to 11	
+
+			First iteration:
+
+				[1, 2, 3, 4, 4]
+
+			Second iteration:
+
+				[1, 2, 3, 3, 4]
+
+		Line no. 14
+
+				[1, 2, 99, 3, 4]
+
+	So, this was very simple dry run of code logic.
+*/
