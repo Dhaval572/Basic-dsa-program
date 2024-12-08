@@ -86,12 +86,12 @@ Explaination:
 	head -> [Node 1] -> [Node 2] ->[Node 3] ->[Node 4] -> NULL
 	index =   (0)		  (1)        (2)	     (3)
 
-	After insertion, linked list will look like below:
+	After deletion, linked list will look like below:
 
 	head -> [Node 1] -> [Node 2] -> [Node 4] -> NULL
 	index =   (0)		  (1)         (3)
 
-	So, that was insertion at index in linked list.
+	So, that was deletion at index in linked list.
 
 	I hope you understand!!
 	
