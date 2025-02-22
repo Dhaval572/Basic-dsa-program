@@ -1,4 +1,4 @@
-//access array element in different way
+// access array element in different way
 #include <iostream>
 using namespace std;
 
