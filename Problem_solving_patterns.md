@@ -11,23 +11,9 @@ This guide outlines key problem-solving patterns used in coding interviews and a
 * Once you learn the core logic of each pattern, many variations become easy.
 
 ---
-
 ## 🧩 Core Problem Solving Patterns
 
-### 1. 🪟 Sliding Window
-
-**Use when:** You're asked to find subarrays/substrings of fixed or dynamic size.
-
-**Examples:**
-
-* Max sum of subarray of size k
-* Longest substring without repeating characters
-
-**Key idea:** Use two pointers to create a "window" that expands/contracts as needed.
-
----
-
-### 2. 🧮 Two Pointers
+### 1. 🧮 Two Pointers
 
 **Use when:** Working with sorted arrays or need to compare elements from both ends.
 
@@ -37,6 +23,19 @@ This guide outlines key problem-solving patterns used in coding interviews and a
 * Reverse an array in-place
 
 **Key idea:** Use one pointer at the start and one at the end.
+
+---
+
+### 2. 🪟 Sliding Window
+
+**Use when:** You're asked to find subarrays/substrings of fixed or dynamic size.
+
+**Examples:**
+
+* Max sum of subarray of size k
+* Longest substring without repeating characters
+
+**Key idea:** Use two pointers to create a "window" that expands/contracts as needed.
 
 ---
 
